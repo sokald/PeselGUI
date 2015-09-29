@@ -38,22 +38,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(82, 143);
+            this.button1.Location = new System.Drawing.Point(72, 118);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "sprawdz pesel";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 13);
+            this.label1.Location = new System.Drawing.Point(45, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(142, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "podaj pesel, aby zwalidować";
             // 
             // numericUpDown1
             // 

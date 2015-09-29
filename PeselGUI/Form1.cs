@@ -18,7 +18,13 @@ namespace PeselGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string peselTest = numericUpDown1.Value.ToString();
 
+            Pesel pe = new Pesel(numericUpDown1.Value.ToString());
+            pe.check();
+
+            //warunek czy ilsc cyfr sie zgadzace
+            MessageBox.Show("cos tam cos tam " + peselTest + " wynik= " + pe.Result);
         }
     }
 }

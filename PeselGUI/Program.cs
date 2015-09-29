@@ -17,6 +17,5 @@ namespace PeselGUI
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-        //sad
     }
 }
