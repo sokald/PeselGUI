@@ -36,10 +36,11 @@ namespace PeselGUI
         }
 
         //check pesel
-        public bool check()
+        public void check()
         {
             byte[] tab = new byte[10] { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
             int sumControl = 0;
+
             if (pesel.Length == 11)
             {
                 for (int i = 0; i < pesel.Length - 1; i++)
@@ -55,17 +56,11 @@ namespace PeselGUI
             }
             Console.WriteLine("suma kontrolna=" + numControl);
             Console.WriteLine("ostatni cyfra peselu=" + pesel[10]);
+            result = false;
             if (numControl == int.Parse(pesel[10].ToString()))
             {
-                Console.WriteLine("poprawny pesel------------------------------------------");
                 result = true;
             }
-            else
-            {
-                Console.WriteLine("NIE poprawny pesel------------------------------------------");
-                result = false;
-            }
-            return false;
         }
 
         public void check(string pesel)
